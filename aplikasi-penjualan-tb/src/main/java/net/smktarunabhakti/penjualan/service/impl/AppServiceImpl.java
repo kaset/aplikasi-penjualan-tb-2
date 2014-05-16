@@ -15,15 +15,13 @@ import net.smktarunabhakti.penjualan.service.AppService;
 @SuppressWarnings("unchecked")
 @Service("appService")
 @Transactional
-
 public class AppServiceImpl implements AppService {
 
 	@Autowired
 	public BarangDao barangDao;
 	
 	public void simpanBarang(Barang b) {
-		barangDao.save(b);
-		
+		barangDao.save(b);	
 	}
 
 	public void hapusBarang(Barang b) {
