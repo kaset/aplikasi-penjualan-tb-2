@@ -22,6 +22,7 @@ public class PenjualanDetail implements Serializable {
 	@GenericGenerator(name = "system-uuid", strategy = "uuid2")
 	private String id;
 	
+	@ManyToOne
 	private Penjualan header;
 	
 	@ManyToOne
