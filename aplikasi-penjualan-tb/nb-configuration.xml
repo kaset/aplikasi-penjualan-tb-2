@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project-shared-configuration>
+<?xml version="1.0" encoding="UTF-8"?><project-shared-configuration>
     <!--
 This file contains additional configuration written by modules in the NetBeans IDE.
 The configuration is intended to be shared among all the users of project and
@@ -8,7 +7,7 @@ Without this configuration present, some functionality in the IDE may be limited
 -->
     <spring-data xmlns="http://www.netbeans.org/ns/spring-data/1">
         <config-files>
-            <config-file>src/main/resources/applicationContext.xml</config-file>
+            <config-file>src/main/resources/net/smktarunabhakti/penjualan/applicationContext.xml</config-file>
         </config-files>
         <config-file-groups/>
     </spring-data>
