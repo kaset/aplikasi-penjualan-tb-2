@@ -16,6 +16,8 @@
           
           http://www.springframework.org/schema/data/jpa
           http://www.springframework.org/schema/data/jpa/spring.jpa.xsd">
+          
+          <context:property-placeholder location="classpath*:jdbc.properties"/>
     
     <context:component-scan base-package="net.smktarunabhakti.penjualan"/>
     <jpa:repositories base:package="net.smktarunabhakti.penjualan.dao"/>
@@ -54,6 +56,18 @@
     		<prop key="hibernate.format.sql">true</prop>
     	</props>
     </property>
+    </bean>
+    
+    <bean id="sessionFactory"
+    	class="org.springframework.orm.hibernate4.LocalSessionFactoryBean"
+    	p:dataSource-ref="dataSource"
+    	p:configLocation="/net/smktarunabhakti/penjualan/hibernate.cfg.xml">
+    </bean>
+    
+    <bean id="hibernateStatisticsMBean"
+    	class="org.hibernate.jmx.StatisticsService">
+    	<property name=""></property>
+    
     </bean>
 
 </beans>
