@@ -20,6 +20,7 @@ import org.hibernate.annotations.GenericGenerator;
  *
  *
  */
+@SuppressWarnings("serial")
 @Entity
 @Table(name = "trx_jual_header")
 public class Penjualan implements Serializable {

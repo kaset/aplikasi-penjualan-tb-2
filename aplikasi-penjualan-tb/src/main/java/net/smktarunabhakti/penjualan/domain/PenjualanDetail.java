@@ -14,6 +14,7 @@ import org.hibernate.annotations.GenericGenerator;
  *
  * @author jimmy
  */
+@SuppressWarnings("serial")
 @Entity
 @Table(name="trx_jual_detail")
 public class PenjualanDetail implements Serializable{
